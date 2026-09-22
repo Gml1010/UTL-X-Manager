@@ -73,36 +73,11 @@
 
 ---
 
-## 📦 Instalação
+## 📦 Download
 
-### Via Código Fonte
-```bash
-git clone https://github.com/SEU_USUARIO/UTL-X.git
-cd UTL-X
-pip install -r requirements.txt
-python UTL-X.py
-```
+O executável pronto (`UTL-X.exe`) está disponível na aba **[Releases](https://github.com/SEU_USUARIO/UTL-X/releases)** do GitHub.
 
-### Requisitos
-```txt
-customtkinter>=5.2.0
-Pillow>=10.0.0
-psutil>=5.9.0
-pystray>=0.19.0
-```
-
-> **Nota**: `pystray` precisa de backend de bandeja do sistema. No Windows funciona nativamente. Para apps compilados, inclua `pystray` no spec do PyInstaller.
-
-### Compilar para `.exe` (PyInstaller)
-```bash
-pip install pyinstaller
-pyinstaller --noconfirm --onefile --windowed \
-  --icon=icon.ico \
-  --add-data "icon.ico;." \
-  --name "UTL-X" \
-  UTL-X.py
-```
-- O app detecta `sys._MEIPASS` e carrega `icon.ico` para a barra de tarefas/título automaticamente.
+> **Para desenvolvedores**: o código fonte requer Python 3.8+ e as dependências em `requirements.txt`. Para compilar, use PyInstaller com `--icon=icon.ico --add-data "icon.ico;."`.
 
 ---
 
