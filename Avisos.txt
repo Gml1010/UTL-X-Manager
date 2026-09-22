@@ -1,1 +1,2 @@
-Teste 123
+Bem-Vindo ao UTL-X 3.0 BETA
+Reporte bugs no servidor do Discord: https://discord.gg/zsbDHyEGyf
